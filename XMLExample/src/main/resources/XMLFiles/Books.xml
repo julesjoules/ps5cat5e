@@ -141,13 +141,4 @@
         <publish_date>2001-04-16T00:00:00-04:00</publish_date>
         <title>Visual Studio 7: A Comprehensive Guide</title>
     </book>
-    <book id="bk120">
-        <author>who cares</author>
-        <cost>5.81</cost>
-        <description>lady macbeth takes on the wild west</description>
-        <genre>Fantasy</genre>
-        <price>7.26</price>
-        <publish_date>3899-02-01T00:00:00-05:00</publish_date>
-        <title>Serena</title>
-    </book>
 </catalog>
