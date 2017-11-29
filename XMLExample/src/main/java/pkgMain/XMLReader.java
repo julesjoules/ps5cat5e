@@ -22,6 +22,8 @@ public class XMLReader {
 		//	Increase the price of each book
 		IncreasePrice(cat,0.10);
 		
+		SetCost(cat, 0.80);
+		/*check canvas, around 45min for these answers forloop*/
 		//	Write the XML file from 'cat' object
 		WriteXMLFile(cat);
 		
@@ -49,6 +51,15 @@ public class XMLReader {
 		return cat;
 	}
 	
+	private static Catalog SetCost(Catalog cat, double PctOfPrice)
+	{
+		for (Book b : cat.getBooks()) {
+			double newCost = (b.getPrice() * PctOfPrice);
+			b.setCost(Math.round(newCost * 100.0) / 100.0);
+		}
+		
+		return cat;
+	}
 	private static void WriteXMLFile(Catalog cat) {
 		try {
 
